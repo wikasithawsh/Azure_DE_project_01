@@ -20,3 +20,8 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 ![image](https://github.com/user-attachments/assets/716dde2d-f667-477d-a07e-c286d5eb3750)
 
 ![image](https://github.com/user-attachments/assets/4afb0699-e527-4d84-b661-538e0a849f23)
+
+## 2.3: Create azure data factory 
+![image](https://github.com/user-attachments/assets/fe05f6ba-24d5-47f9-b0fc-b0a577f40e77)
+
+![image](https://github.com/user-attachments/assets/6581bda8-3316-4e49-8575-75a9615a9055)
