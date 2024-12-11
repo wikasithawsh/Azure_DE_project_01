@@ -11,3 +11,12 @@
 ##2.1: Create Azure Resource Group 
 ![image](https://github.com/user-attachments/assets/94aa3607-af82-4e4a-a0a9-a36c78df6ba3)
 Note: This is the resource group I will use to build this complete end-to-end project. Inside this resource group, I will be creating all the tools required for this project.
+
+## 2.2: Create Azure Synapse Analytics and Storage Account (DatalakeGen2)
+![image](https://github.com/user-attachments/assets/af528e72-885d-4f17-96cf-11e1382c00a6)
+
+![image](https://github.com/user-attachments/assets/fc9de621-8581-40dc-b141-7ed393a43d18)
+
+![image](https://github.com/user-attachments/assets/716dde2d-f667-477d-a07e-c286d5eb3750)
+
+![image](https://github.com/user-attachments/assets/4afb0699-e527-4d84-b661-538e0a849f23)
