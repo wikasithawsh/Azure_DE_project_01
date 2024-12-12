@@ -144,3 +144,10 @@ Now we can see secret name failing, gives error, this is because we have config 
 ## Created Access Policy like below 
 ![image](https://github.com/user-attachments/assets/a93efff7-7f6e-47b9-b575-1382b63cc119)
 
+in access policy > need to give ADF name under princilple 
+![image](https://github.com/user-attachments/assets/330f7b8d-0609-4245-8739-c9f3023e9f3f)
+
+Now Access policy been created 
+![image](https://github.com/user-attachments/assets/fc5c1664-1717-41e2-ae10-dbcb332e717f) 
+
+So now ADF can read secrets >>>>
