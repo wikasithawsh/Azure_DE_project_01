@@ -151,3 +151,11 @@ Now Access policy been created
 ![image](https://github.com/user-attachments/assets/fc5c1664-1717-41e2-ae10-dbcb332e717f) 
 
 So now ADF can read secrets >>>>
+Now that previous error is resolved > 
+![image](https://github.com/user-attachments/assets/1733f252-0ee8-4be6-9f51-21972edcd063)
+
+![image](https://github.com/user-attachments/assets/decab294-bc48-44ae-816a-424dc9a40a04)
+
+![image](https://github.com/user-attachments/assets/bd4541d2-f7a6-43e0-8467-28497c868bb7)
+
+
