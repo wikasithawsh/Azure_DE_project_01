@@ -111,9 +111,9 @@ The below image shows > that the express setip application is installed now.
     with the key copied from the issue data factory.
     -------------------------------------------------------------------------------------------------------------
 3: Main usage of Integrated Runtime = We should have two things to perform any operation 
-   1: Compute power 
-   2: Infrastructure to execute the operation
+   1: Compute power \
+   2: Infrastructure to execute the operation \
    So here, this integration runtime is giving us both in terms of the Azure Data factory to do any sort of operations like 
-   data integration or data movement or any kind of thing.
+   data integration or data movement or any kind of thing.\
    ## So in simple terms, we can say the integration runtime is also called a computing infrastructure in ADF
    
