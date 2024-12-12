@@ -184,3 +184,72 @@ Go to Security and ensure that SQL Server and Windows Authentication mode is sel
 Error /issue is resolved >>>>
 ![image](https://github.com/user-attachments/assets/4fb6afaa-1ec1-4306-aff9-25936912123d)
 
+Now link connection is successfully connected (on-prem sql server to ADF)
+
+---------------------------------------------------------------------------------------------
+![image](https://github.com/user-attachments/assets/3dee0d87-22bb-4d8f-841a-dd4e9b81a8d6)
+
+## Here first I copy address table data fro SQL server to ADF
+![image](https://github.com/user-attachments/assets/e83a3955-b343-4296-a550-5e385a3efd34)
+
+>![image](https://github.com/user-attachments/assets/0395e0c2-916a-4d73-9715-30b3e186e889)
+## Source is configured now , we can preview how source data is arranged like below
+## Note : for Source we selected sql server
+![image](https://github.com/user-attachments/assets/2a003970-1c88-4c2c-8bff-23cdcf966860)
+
+## For sink > We can select Azure datalake GEN 2 > parquet file format 
+![image](https://github.com/user-attachments/assets/7e8d1cda-7d86-4146-852e-0356d964654f) 
+
+## Hint: 
+So here now we try to use/connect Azure Datalake Gen2 , so we have to create a link for it , this time ADF to Azure DL connection , so we can use default AuroinResolvetregationRuntime here.( to connect between azure cloud components)
+
+Check test connection for sink 
+![image](https://github.com/user-attachments/assets/e8fefb6b-e675-4b1c-9983-c9d40f41a913)
+
+Test connection is ok > Then create link for sink 
+![image](https://github.com/user-attachments/assets/26f6d0fb-38ec-4f92-bc2b-0e1f8450fe6b)
+
+## Now we need to define in which location that we should save files in DL 
+we can save data in DL in bronze container 
+
+what is bronze container > 
+![image](https://github.com/user-attachments/assets/a4c6cad2-3417-4d38-97da-93b4480c53d2) 
+
+![image](https://github.com/user-attachments/assets/76edc66d-0267-4708-8b7e-13330a0ec812)
+
+![image](https://github.com/user-attachments/assets/a517d20a-3435-4bb9-9254-f728a7795939)
+
+-------------------------------------------------------------------------------------------
+## ADF pipeline testing
+## Error occured | pipeline is failed 
+![image](https://github.com/user-attachments/assets/b1ec9a9f-2306-41a6-ad31-e967ed06bd61)
+
+## Root cause :  (JreNotFound) indicates that the Java Runtime Environment (JRE) is not installed on your Self-hosted Integration Runtime (SHR) machine. The Self-hosted Integration Runtime is required for data transfer activities like copying data, and Java is needed for parsing and writing to certain file formats, such as Parquet or ORC
+
+## solution >>> 
+Add java path correctly in local pc 
+restart self-hosted runtime 
+![image](https://github.com/user-attachments/assets/6c72710f-6126-4e87-bc12-32b1be37acc5)
+
+![image](https://github.com/user-attachments/assets/cea08541-d22a-4c83-be09-ecc9d2955fe6)
+
+![image](https://github.com/user-attachments/assets/c4193689-9b76-42c4-b2ee-b0be94a7d0a8)
+
+From Azure Doc > 
+![image](https://github.com/user-attachments/assets/e68794c5-4d91-4d29-b704-567f11cbeb72)
+
+### Special Note: To copy data from on-prem sql db to ADF, we must have oracle jre-8u431-windows-x64.
+It was not worked JDK 23 , eben in Azure doc mentioned it's worked but here not worked.
+https://www.java.com/en/download/manual.jsp
+
+## Issue is resolved  | worked last solution was install oracal JDK & restarted self-hosted runtime 
+![image](https://github.com/user-attachments/assets/9a89368e-7f06-462c-a7fb-ff8a61a670d1)
+
+
+
+
+
+
+
+
+
