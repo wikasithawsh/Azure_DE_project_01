@@ -125,3 +125,17 @@ Once express set up is done we can see below in ADF.
 ## Express setup post install verification 
 from local laptop we can check it via MS integration configuration manager 
 ![image](https://github.com/user-attachments/assets/37ee19e4-6ad3-4df2-ba98-fa52120ec4bd)
+
+## 3.4 : Data Ingestion 
+in ADF : Go Author > Pipielines > 
+
+
+![image](https://github.com/user-attachments/assets/11045908-1643-4d27-901a-c1efcae2cb24)
+
+Test Connection > 
+![image](https://github.com/user-attachments/assets/48a6cdbc-a3ea-4612-9750-b65ca316a2f4)
+
+Now we can see secret name is fail, gives error , this is because we have config both username  password in key vault
+![image](https://github.com/user-attachments/assets/b4644389-0a83-4603-af80-6ab14a4355ed)
+
+
