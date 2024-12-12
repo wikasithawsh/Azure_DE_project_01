@@ -17,7 +17,8 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 
 ![image](https://github.com/user-attachments/assets/fc9de621-8581-40dc-b141-7ed393a43d18)
 
-![image](https://github.com/user-attachments/assets/716dde2d-f667-477d-a07e-c286d5eb3750)
+![image](https://github.com/user-attachments/assets/716dde2d-f667-477d-a07e-c286d5eb3750)  
+
 
 
 ## Error link service test connection is failed > 
@@ -246,6 +247,11 @@ https://www.java.com/en/download/manual.jsp
 ![image](https://github.com/user-attachments/assets/9a89368e-7f06-462c-a7fb-ff8a61a670d1)
 
 
+## Verification : we can see data has been copied into Datalake > bronze container 
+![image](https://github.com/user-attachments/assets/d03ec710-2579-4869-aa51-af0acf4f8bec)
+
+##Publish all the chnages (Deploying all the chnages into ADF)
+![image](https://github.com/user-attachments/assets/e24fff27-767f-4425-aa2f-cf126643dafb)
 
 
 
