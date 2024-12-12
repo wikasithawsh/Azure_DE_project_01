@@ -19,6 +19,18 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 
 ![image](https://github.com/user-attachments/assets/716dde2d-f667-477d-a07e-c286d5eb3750)
 
+
+## Error link service test connection is failed > 
+
+reason is below > 
+![image](https://github.com/user-attachments/assets/d494cd55-f982-4a10-b34d-28bb9bfef9d0)
+
+Solution > 
+![image](https://github.com/user-attachments/assets/c97201d8-adee-40c5-a970-41e2cd8e41ff)
+
+
+
+
 ![image](https://github.com/user-attachments/assets/4afb0699-e527-4d84-b661-538e0a849f23)
 
 ## 2.3: Create Azure Data Factory 
@@ -158,4 +170,17 @@ Now that previous error is resolved >
 
 ![image](https://github.com/user-attachments/assets/bd4541d2-f7a6-43e0-8467-28497c868bb7)
 
+## Error > 
+![image](https://github.com/user-attachments/assets/54666689-0faf-4374-8057-721feb365405)
+
+Solution tried| worked solution , restrted SQL server] > 
+1. Check SQL Server Authentication Settings
+Ensure that SQL Server is configured to allow SQL Server Authentication, especially if you're using a SQL login instead of Windows Authentication.
+Open SQL Server Management Studio (SSMS) and log in to your instance.
+Right-click on the server name (SQLEXPRESS) in Object Explorer > Properties.
+Go to Security and ensure that SQL Server and Windows Authentication mode is selected.
+![image](https://github.com/user-attachments/assets/5d658873-163f-443d-aa02-84e597967622)
+
+Error /issue is resolved >>>>
+![image](https://github.com/user-attachments/assets/4fb6afaa-1ec1-4306-aff9-25936912123d)
 
