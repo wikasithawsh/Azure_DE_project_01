@@ -51,3 +51,21 @@ create user wiks for login wiks "
 Hint: right clik on user > select  user properties 
 ![image](https://github.com/user-attachments/assets/6a096e69-404f-4783-8fb9-444efbee1dea)
 
+## key vault > secret objects 
+
+![image](https://github.com/user-attachments/assets/4c16ba41-bd24-469c-aa39-e914048ef21b)
+
+## We need to create two secret values 
+1 . username, hint > use details from craetelogin.sql file 
+2.  password
+
+
+![image](https://github.com/user-attachments/assets/525f855e-8e69-4acb-b290-fc063d04f24d)
+
+
+![image](https://github.com/user-attachments/assets/9ad65aee-79e5-46b1-ab04-83a12e8d4750)
+
+## Note: Using key vault, we can connect ADF, and synapse A with on-prem SQL db without typing username & password
+
+--------------------------------------------------------------------------------------------
+## Now I have created all the necessary Azure resources, created user logins for on-prem SQL db, created key vault authentications 
