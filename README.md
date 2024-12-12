@@ -135,7 +135,12 @@ in ADF : Go Author > Pipielines >
 Test Connection > 
 ![image](https://github.com/user-attachments/assets/48a6cdbc-a3ea-4612-9750-b65ca316a2f4)
 
-Now we can see secret name is fail, gives error , this is because we have config both username  password in key vault
+Now we can see secret name failing, gives error, this is because we have config both username  passwords in key vault
 ![image](https://github.com/user-attachments/assets/b4644389-0a83-4603-af80-6ab14a4355ed)
 
+## We need to grant permission to read secret object | need to create new access policy > 
+![image](https://github.com/user-attachments/assets/b72aca44-2db8-4987-b87d-be74ec448a6b)
+
+## Created Access Policy like below 
+![image](https://github.com/user-attachments/assets/a93efff7-7f6e-47b9-b575-1382b63cc119)
 
