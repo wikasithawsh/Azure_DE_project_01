@@ -254,6 +254,7 @@ https://www.java.com/en/download/manual.jsp
 ![image](https://github.com/user-attachments/assets/e24fff27-767f-4425-aa2f-cf126643dafb)
 
 Below is the output we can see in data lake > one table is data is ingested 
+![image](https://github.com/user-attachments/assets/1af73707-dab2-4dfd-a98c-32d0f4df25ed)
 
 -------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
