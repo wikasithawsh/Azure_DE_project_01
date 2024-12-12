@@ -21,7 +21,19 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 
 ![image](https://github.com/user-attachments/assets/4afb0699-e527-4d84-b661-538e0a849f23)
 
-## 2.3: Create azure data factory 
+## 2.3: Create Azure Data Factory 
 ![image](https://github.com/user-attachments/assets/fe05f6ba-24d5-47f9-b0fc-b0a577f40e77)
 
 ![image](https://github.com/user-attachments/assets/6581bda8-3316-4e49-8575-75a9615a9055)
+
+## 2.4:Create Azure Databricks 
+![image](https://github.com/user-attachments/assets/98936044-d4a6-4aaa-988b-406ccce22f24)
+
+## 2.5: Create Azure Key Vault
+
+![image](https://github.com/user-attachments/assets/fa7ae15d-b755-46b7-b436-4e421ab780ed)
+
+![image](https://github.com/user-attachments/assets/0f8ff0b8-9c05-4790-9609-18e99cbd572d)
+-----------------------------------------------------------------------------------------
+## Let's see all the resources we created now 
+![image](https://github.com/user-attachments/assets/084b321f-d490-44de-b0fc-60b4ae714e89)
