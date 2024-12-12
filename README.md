@@ -39,5 +39,15 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 ![image](https://github.com/user-attachments/assets/084b321f-d490-44de-b0fc-60b4ae714e89)
 
 ## SQL server , user login creation & grant permission 
+# SQL server > file >open>file > createloging.sql
+"CREATE LOGIN wiks WITH PASSWORD = 'WIKSdataengproject';
+create user wiks for login wiks " 
+
+![image](https://github.com/user-attachments/assets/ba730459-94ab-42a3-88a9-57f24fe71037)
+
 ![image](https://github.com/user-attachments/assets/5f296ac7-8e02-46b1-a7e9-1743fc596805)
+
+## grant permission to SQL server created user 
+Hint: right clik on user > select  user properties 
+![image](https://github.com/user-attachments/assets/6a096e69-404f-4783-8fb9-444efbee1dea)
 
