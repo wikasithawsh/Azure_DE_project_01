@@ -260,6 +260,76 @@ Below is the output we can see in data lake > one table is data is ingested
 --------------------------------------------------------------------------------------------------------
 ## Copy all the on-prem SQL Datbles at once into ADF 
 
+Created sql script as below to get schema > getschema.sql 
+
+SELECT
+s.name AS SchemaName,
+t.name AS TableName
+FROM
+sys.tables T 
+INNER JOIN sys.schemas s 
+ON t.schema_id = s.schema_id
+WHERE s.name = 'SalesLT'
+![image](https://github.com/user-attachments/assets/e06e4402-b2eb-4d9d-ad26-94b8284db3a2)
+
+Next we can execute that script from SQL management studio like below 
+![image](https://github.com/user-attachments/assets/3bda14fe-5c31-4dd2-8194-2cf2ab144458)
+
+As per above image , these arethe tables now we are going to ingest into ADF.
+## first we add lookup activity in ADF
+here we don't give one table name ike previously , but we can use previously created Self-Hosted Runtime and link as well 
+![image](https://github.com/user-attachments/assets/394157c1-892e-483e-b368-b822206aa604)
+
+## Here in lookup activity , we can add getschema.sql query in ADF here also as below 
+![image](https://github.com/user-attachments/assets/b2f1261b-0532-4c06-ad49-7b6eff45c202)
+
+## Next task is how we can use lookup activity to load all SQl data into ADF , so we first debug lookup activity 
+![image](https://github.com/user-attachments/assets/6fa90380-2c0f-4930-a8d1-08a8f7e85cb9)
+
+Added config in lookup activity in ADF 
+![image](https://github.com/user-attachments/assets/d6f56a83-c0a8-4d87-a906-c50330502e05)
+
+
+
+
+## preview data in lookup activity 
+![image](https://github.com/user-attachments/assets/c784a284-fbf8-4f31-abba-ca4946aae57e)
+
+
+## in lookup table activity , inside we can add below configs 
+![image](https://github.com/user-attachments/assets/f97a7b20-c778-43ee-b4b8-ee8c0bee8b80)
+
+![image](https://github.com/user-attachments/assets/1dc7a888-ec3c-4b27-92f6-805d7a146380)
+
+## Now inside lookup activity , we can config sink,since now source alreday is configured as above image.
+
+## Note > folder structure in ADF herei followed is like this = bronze/SalesLT/Address/Address.parquet
+so we can define folder structure as we wish like below 
+![image](https://github.com/user-attachments/assets/2499c2ef-b181-4172-a009-c68fce1039da)
+
+![image](https://github.com/user-attachments/assets/aba97334-0c77-4fe8-b4fd-5c3948bf2dec).
+
+![image](https://github.com/user-attachments/assets/f793a8b2-c867-435f-b0c8-83a3647fe9ed)
+
+![image](https://github.com/user-attachments/assets/d125b586-3600-4a87-8727-5f912878d017)
+
+## once these chnages are done we cna publish piple line and then we can see whether all data are copied or not 
+![image](https://github.com/user-attachments/assets/6059e2c9-746b-4e04-9d8a-5c9a915d13cc)
+
+## All sql data tables ingestion pipeline is successfully completed 
+
+![image](https://github.com/user-attachments/assets/f8d092f5-9f9d-4a09-92bf-8aca3e39425d)
+
+Data has been ingested in corect folder structure in Azure Data Lake
+![image](https://github.com/user-attachments/assets/7998b1ec-ca1f-461e-9642-b2bf81eb1e21)
+
+---------------------------------------------------------------------------------------------------------
+## 5 : Data Transformation 
+
+
+
+
+
 
 
 
