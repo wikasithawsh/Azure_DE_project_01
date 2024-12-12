@@ -69,3 +69,32 @@ Hint: right clik on user > select  user properties
 
 --------------------------------------------------------------------------------------------
 ## Now I have created all the necessary Azure resources, created user logins for on-prem SQL db, created key vault authentications 
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+## Step 3 Data ingestion: Azure Data Factory 
+3.1: Build /establish a connection between the on-prem SQL database to Azure DF 
+
+we can use integration runtime [self-hosted integration runtime]
+![image](https://github.com/user-attachments/assets/ad552a77-4cf1-4096-8066-a516c427f39b)
+
+Note: Here we can see AutoResolveIntegrationRuntime is default created in Azure. It's used to connect ADf with other cloud components like Azure Data Lake
+![image](https://github.com/user-attachments/assets/256e48d9-94d4-412d-8714-db8acd7fb7f3)
+
+## 3.2 Creating self-hosted runtime in ADF 
+![image](https://github.com/user-attachments/assets/1166424a-58d9-41b8-b051-836d1d1d0419)
+
+## Now we can see two options & we have to choose Self-hosted option as below 
+![image](https://github.com/user-attachments/assets/c6ca7e68-aadf-40d3-8b21-a1f4a3188f08)
+
+## Need to provide a name for SHR (self-hosted runtime)
+![image](https://github.com/user-attachments/assets/633a6938-382a-4229-8a1c-164e529b248a)
+
+
+## Now we can see there are two methods that we can use to set up self-hosted runtime
+3.2.1: Express set up = We can just click on this link to install the self-hosted integration runtime without actually specifying the key.
+
+3.2.2: Manual set up  = In the manual setup, we can click on that link to download an application. When we install the application we have to enter one of these  keys (we can see in below image those keys)
+
+Here I tried option 1 ( Express setup)
+![image](https://github.com/user-attachments/assets/5a7ae05a-8124-4872-9fc5-3f2af27bbeca)
+
