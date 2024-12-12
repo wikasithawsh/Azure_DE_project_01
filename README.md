@@ -35,5 +35,9 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 
 ![image](https://github.com/user-attachments/assets/0f8ff0b8-9c05-4790-9609-18e99cbd572d)
 -----------------------------------------------------------------------------------------
-## Let's see all the resources we created now 
+## Let's see all the resources I created now 
 ![image](https://github.com/user-attachments/assets/084b321f-d490-44de-b0fc-60b4ae714e89)
+
+## SQL server , user login creation & grant permission 
+![image](https://github.com/user-attachments/assets/5f296ac7-8e02-46b1-a7e9-1743fc596805)
+
