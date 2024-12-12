@@ -250,7 +250,7 @@ https://www.java.com/en/download/manual.jsp
 ## Verification : we can see data has been copied into Datalake > bronze container 
 ![image](https://github.com/user-attachments/assets/d03ec710-2579-4869-aa51-af0acf4f8bec)
 
-##Publish all the chnages (Deploying all the chnages into ADF)
+## Publish all the chnages (Deploying all the chnages into ADF)
 ![image](https://github.com/user-attachments/assets/e24fff27-767f-4425-aa2f-cf126643dafb)
 
 
