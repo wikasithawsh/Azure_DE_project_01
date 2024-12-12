@@ -7,7 +7,7 @@
 1.3: Restore Database Using SQL Server Management Studio (SSMS)
 ![image](https://github.com/user-attachments/assets/3f3d93c5-08ad-4461-9d77-c3acee516d3c)
 
-## Step 02: Creating Resources in Azure cloud 
+## Step 02: Creating Resources in Azure Cloud 
 ##2.1: Create Azure Resource Group 
 ![image](https://github.com/user-attachments/assets/94aa3607-af82-4e4a-a0a9-a36c78df6ba3)
 Note: This is the resource group I will use to build this complete end-to-end project. Inside this resource group, I will be creating all the tools required for this project.
@@ -38,7 +38,7 @@ Note: This is the resource group I will use to build this complete end-to-end pr
 ## Let's see all the resources I created now 
 ![image](https://github.com/user-attachments/assets/084b321f-d490-44de-b0fc-60b4ae714e89)
 
-## SQL server , user login creation & grant permission 
+## SQL server, user login creation & grant permission 
 # SQL server > file >open>file > createloging.sql
 "CREATE LOGIN wiks WITH PASSWORD = 'WIKSdataengproject';
 create user wiks for login wiks " 
@@ -47,8 +47,8 @@ create user wiks for login wiks "
 
 ![image](https://github.com/user-attachments/assets/5f296ac7-8e02-46b1-a7e9-1743fc596805)
 
-## grant permission to SQL server created user 
-Hint: right clik on user > select  user properties 
+## Grant permission to SQL server-created user 
+Hint: right click on user > select  user properties 
 ![image](https://github.com/user-attachments/assets/6a096e69-404f-4783-8fb9-444efbee1dea)
 
 ## key vault > secret objects 
@@ -98,7 +98,22 @@ Note: Here we can see AutoResolveIntegrationRuntime is default created in Azure.
 Here I tried option 1 ( Express setup)
 ![image](https://github.com/user-attachments/assets/5a7ae05a-8124-4872-9fc5-3f2af27bbeca)
 
-Then we need to download the Expresssetup application into our local machine where SQL on-prem data base is.
+Then we need to download the Expresssetup application into our local machine where the SQL on-prem database is.
 
-below image shows > express setip application is installing now.
+The below image shows > that the express setip application is installed now.
 ![image](https://github.com/user-attachments/assets/01a64c45-161c-4bf1-a064-08dea1b177b5)
+
+## Note:  
+1:  The benefit of using Express Setup is > It tries to download the file and do the key-based authentication automatically 
+    for us.
+2:  When manual setup is good > If we are going to install the self-hosted integration runtime in a different machine. Then we 
+    should probably go with the manual setup where we will be going to manually register the self-hosted integration runtime 
+    with the key copied from the issue data factory.
+    -------------------------------------------------------------------------------------------------------------
+3: Main usage of Integrated Runtime = We should have two things to perform any operation 
+   1: Compute power 
+   2: Infrastructure to execute the operation
+   So here, this integration runtime is giving us both in terms of the Azure Data factory to do any sort of operations like 
+   data integration or data movement or any kind of thing.
+   ## So in simple terms, we can say the integration runtime is also called a computing infrastructure in ADF
+   
