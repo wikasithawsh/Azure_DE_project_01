@@ -99,3 +99,6 @@ Here I tried option 1 ( Express setup)
 ![image](https://github.com/user-attachments/assets/5a7ae05a-8124-4872-9fc5-3f2af27bbeca)
 
 Then we need to download the Expresssetup application into our local machine where SQL on-prem data base is.
+
+below image shows > express setip application is installing now.
+![image](https://github.com/user-attachments/assets/01a64c45-161c-4bf1-a064-08dea1b177b5)
