@@ -98,3 +98,4 @@ Note: Here we can see AutoResolveIntegrationRuntime is default created in Azure.
 Here I tried option 1 ( Express setup)
 ![image](https://github.com/user-attachments/assets/5a7ae05a-8124-4872-9fc5-3f2af27bbeca)
 
+Then we need to download the Expresssetup application into our local machine where SQL on-prem data base is.
