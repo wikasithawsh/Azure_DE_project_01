@@ -118,3 +118,6 @@ The below image shows > that the express setip application is installed now.
    ## So in simple terms, we can say the integration runtime is also called a computing infrastructure in ADF
    
 ![image](https://github.com/user-attachments/assets/15a9ea73-2ddb-4e31-84fb-9d0dd762ec96)
+
+Once express set up is done we can see below in ADF.
+![image](https://github.com/user-attachments/assets/88985c54-aee0-4884-a244-6d12fab97465)
