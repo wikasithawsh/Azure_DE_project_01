@@ -253,6 +253,8 @@ https://www.java.com/en/download/manual.jsp
 ## Publish all the chnages (Deploying all the chnages into ADF)
 ![image](https://github.com/user-attachments/assets/e24fff27-767f-4425-aa2f-cf126643dafb)
 
+Below is the output we can see in data lake > one table is data is ingested 
+
 -------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
 ## Copy all the on-prem SQL Datbles at once into ADF 
