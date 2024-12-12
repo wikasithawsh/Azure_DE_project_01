@@ -121,3 +121,7 @@ The below image shows > that the express setip application is installed now.
 
 Once express set up is done we can see below in ADF.
 ![image](https://github.com/user-attachments/assets/88985c54-aee0-4884-a244-6d12fab97465)
+
+## Express setup post install verification 
+from local laptop we can check it via MS integration configuration manager 
+![image](https://github.com/user-attachments/assets/37ee19e4-6ad3-4df2-ba98-fa52120ec4bd)
