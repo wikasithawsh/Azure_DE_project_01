@@ -324,11 +324,41 @@ Data has been ingested in corect folder structure in Azure Data Lake
 ![image](https://github.com/user-attachments/assets/7998b1ec-ca1f-461e-9642-b2bf81eb1e21)
 
 ---------------------------------------------------------------------------------------------------------
-## 5 : Data Transformation 
+## 5 : Data Transformation | Datbricks
+5.1 : Created compute cluster 
+![image](https://github.com/user-attachments/assets/43f2ea1a-61ef-41fb-aeeb-13f567d2ae25)
 
+5.2 : create Databricks notebook for data lake stoarge mount 
 
+5.3: used code from azure docs > https://learn.microsoft.com/en-us/azure/databricks/archive/credential-passthrough/adls-passthrough (Azure Data Lake Storage Gen2)
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+## Error >> error occurs because the Databricks cluster is unable to retrieve the ADLS Gen2 token required to authenticate and mount the Azure Data Lake Storage.
+![image](https://github.com/user-attachments/assets/89f05973-63fb-46be-ad3a-0fd62b0d19cc)
 
+## Solution >
+![image](https://github.com/user-attachments/assets/4010d1fa-d181-4ebf-a362-1daa7d485856)
+
+Issue is resolved by following above compute creation change in databrcks 
+![image](https://github.com/user-attachments/assets/389eaf91-c32b-4543-bfbf-9af9f986d3a9)
+
+Another error occured when creating gold container > manually created gold container in storage acc then databricks worked 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+5.4: Data transformations from bronze to silver container
+
+T1 : data column modification (date time into date )
+Before Transform :
+![image](https://github.com/user-attachments/assets/72d51f59-2589-429e-a84a-b19839b6b7d0)
+
+After transformation :
+![image](https://github.com/user-attachments/assets/953c5693-7ee1-40bf-8b80-e77bb1d8a271)
+
+Trnsformed data is saved in silver container 
+![image](https://github.com/user-attachments/assets/d366ab40-fb8c-478a-94c2-65d3082329f7)
+
+---------------------------------------------------------------------------------------------------------
+## 5.5 Data Transforation from Silver to Gold container | Gold container data is used for BI layer for reporting 
 
 
 
