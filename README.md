@@ -1,6 +1,7 @@
 ### Azure_DE_project_01
 
 ## Step 01: Setting up the Data Source
+## Data Source is On-prem SQL database
 1.1:SQL Server Instance 
 1.2: SQL Server Management Studio (SSMS)
 ## used data set = //github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
