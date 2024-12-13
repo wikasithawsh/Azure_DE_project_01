@@ -1,5 +1,9 @@
 ### Azure_DE_project_01
+--------------------------------------------------------------------------------------------------------------------
 
+![image](https://github.com/user-attachments/assets/522d33f7-9144-448c-abdf-a7e9f669ec5b)
+
+--------------------------------------------------------------------------------------------------------------------
 ## Step 01: Setting up the Data Source
 ## Data Source is On-prem SQL database
 1.1:SQL Server Instance 
