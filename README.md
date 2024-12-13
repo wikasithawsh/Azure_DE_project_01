@@ -414,7 +414,13 @@ Transformed data is saved as delta format in gold container from silver containe
  we need to use exsisitng using databrocks compute cluster here > 
  ![image](https://github.com/user-attachments/assets/d1efda66-9551-4408-9cb2-063a62b4e6b2)
 
+### When databricks cluster is inactive we need to create new cluster and need to give new cluster name here to ADF
+![image](https://github.com/user-attachments/assets/98f779e0-ee63-41fc-b109-29cff33b5912)
+## ---------------------------------------------------------------------------------------------------
+******************************************************************************************************
+### On-Prem MySQL > Azure Data Factory > Azure Data LAke Gen2 [ Bronze Layer > Silver Layer > Gold Layer ] > Azure DataBricks  Pipeline is successfully Implemented as below image. 
 
+![image](https://github.com/user-attachments/assets/b97c3e71-c5d3-48a7-9d15-8d6701e04121)
 
 
 
