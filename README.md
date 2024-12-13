@@ -370,7 +370,57 @@ Transformed data is saved as delta format in gold container from silver containe
 ![image](https://github.com/user-attachments/assets/58efea8a-ce4c-4d63-8ddd-26d92edcc902)
 
 ----------------------------------------------------------------------------------------------
-6: Azure Data Factory to run Data Bricks notebooks in pipelines
+## 6: Azure Data Factory to run Data Bricks notebooks in pipelines
+ # We need to build connection from AF to Azure Databricks now..
+
+ Right now our ADF pipeline is like below 
+ ![image](https://github.com/user-attachments/assets/8b14ee7c-fe10-49e9-9fd6-39ea23c7a5c0)
+
+ So we need to create link service from ADF to Databricks: 
+ ![image](https://github.com/user-attachments/assets/9060d43f-8692-4f0a-9d86-c775ec3613e3)
+
+ We need to create a access token to Databricks 
+ ![image](https://github.com/user-attachments/assets/d00906b3-0bbc-4196-91e3-172deaac7a39)
+
+ How to create access token for ADF from Databricks is below :
+ ![image](https://github.com/user-attachments/assets/f2bb0642-722a-4801-a01b-cda621584dbc)
+
+ Access token is created 
+ ![image](https://github.com/user-attachments/assets/45a3f1f6-a809-4daa-b19c-4900a7820def)
+
+ Then we can add that created token as a seceret in azure key vault 
+ ![image](https://github.com/user-attachments/assets/9f4062c3-a573-4624-ad2a-9ccc93f204f7)
+
+ ![image](https://github.com/user-attachments/assets/3e3dc5d1-03d1-4f85-90d1-600386e2a95b)
+
+ Then need to test connection  once it is ok we can craete link service fro ADF to Databricks
+
+ Publish changes into ADF 
+
+ ![image](https://github.com/user-attachments/assets/77128c18-3e46-4365-b1c6-22d6b0f2cd2d)
+
+ ## Now below one is the full pipeline
+ ![image](https://github.com/user-attachments/assets/f6effd7b-b2c2-4230-88e6-5fa16b8caf0a)
+
+ ![image](https://github.com/user-attachments/assets/2afb6cd9-5d43-4cc1-9ef8-236aac494f2a)
+
+ ## Now we cna publish chnages into ADF and test pipeline by running trigger 
  
+
+
+
+ ![image](https://github.com/user-attachments/assets/b0353dff-5555-40b8-a708-1b450501342b)
+
+ we need to use exsisitng using databrocks compute cluster here > 
+ ![image](https://github.com/user-attachments/assets/d1efda66-9551-4408-9cb2-063a62b4e6b2)
+
+
+
+
+
+
+
+
+
 
 
