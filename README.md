@@ -359,10 +359,18 @@ Trnsformed data is saved in silver container
 
 ---------------------------------------------------------------------------------------------------------
 ## 5.5 Data Transforation from Silver to Gold container | Gold container data is used for BI layer for reporting 
+Next Transformation > 
+two words in columnameas one word > we can split into two words in column name 
+![image](https://github.com/user-attachments/assets/ff2090e7-5615-4823-a401-0012ca48a463)
 
+After Transformation column name is used _ to split two names now as below 
+![image](https://github.com/user-attachments/assets/2a193c99-bcb4-44ff-8c0c-c8baef289194)
 
+Transformed data is saved as delta format in gold container from silver container 
+![image](https://github.com/user-attachments/assets/58efea8a-ce4c-4d63-8ddd-26d92edcc902)
 
-
-
+----------------------------------------------------------------------------------------------
+6: Azure Data Factory to run Data Bricks notebooks in pipelines
+ 
 
 
