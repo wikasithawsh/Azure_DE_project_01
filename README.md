@@ -427,6 +427,35 @@ Transformed data is saved as delta format in gold container from silver containe
 
 ![image](https://github.com/user-attachments/assets/b97c3e71-c5d3-48a7-9d15-8d6701e04121)
 
+******* ---------------------------------------------------------------------------------******
+------------------------------------------------------------------------------------------------
+## Step 7 : Azure Synapse Analytics 
+## Data loading with Azure Synapse analytics 
+in created Resource Group > 
+![image](https://github.com/user-attachments/assets/e6b286c0-2757-434d-8098-7a6b92a230cb)
+
+Azure Synapse Analytics is build top of ADF 
+
+![image](https://github.com/user-attachments/assets/bbf17ad8-5b6c-431c-8b12-78e9b888fe06)
+
+First we create databse in  Synapse Analytics (SA) via Data tab like below>
+## Note: TWo type data bses are there 
+1: Serverles = good for small workload , not expensive
+2: dedicated = god for large workload , but this is expensive one 
+
+![image](https://github.com/user-attachments/assets/97aee9f7-9a5b-4ba0-834e-2736125a6e21)
+Furthermore, we can see SA sql tools , there is default serverless built in sql tool is there.
+so we use use it if we use serverless database.
+if we use serverless data base , then it can connect data in Gold container in DL and do query , so we need to give compute power for that to database.data is not loaded into  SA data base fro Azure Gen2 DL.So data is at Dl, but SA db can connect it with and do needful quering etc.
+
+But if we use deicated db in SA, then it takes both compute & storage since then Data should load feom gold container to SA Sql dedicated db. 
+
+Here I used serverless SQL db for SA.
+![image](https://github.com/user-attachments/assets/918cd992-511b-4358-9fdc-4faef67acee5)
+
+## Created SA serverless sql db naes as = gold_db
+![image](https://github.com/user-attachments/assets/55ca00b4-74e2-4690-8bb4-a02351fc8a6e)
+
 
 
 
