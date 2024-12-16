@@ -179,7 +179,7 @@ Now that previous error is resolved >
 ## Error > 
 ![image](https://github.com/user-attachments/assets/54666689-0faf-4374-8057-721feb365405)
 
-Solution tried| worked solution , restrted SQL server] > 
+Solution tried| worked solution , restarted SQL server] > 
 1. Check SQL Server Authentication Settings
 Ensure that SQL Server is configured to allow SQL Server Authentication, especially if you're using a SQL login instead of Windows Authentication.
 Open SQL Server Management Studio (SSMS) and log in to your instance.
