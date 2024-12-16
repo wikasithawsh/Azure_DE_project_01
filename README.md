@@ -456,6 +456,7 @@ Here I used serverless SQL db for SA.
 ## Created SA serverless sql db naes as = gold_db
 ![image](https://github.com/user-attachments/assets/55ca00b4-74e2-4690-8bb4-a02351fc8a6e)
 
+## Note :Azure Sa is connected with Azure Data Lake
 
 
 
