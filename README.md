@@ -263,7 +263,7 @@ Below is the output we can see in data lake > one table is data is ingested
 
 -------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
-## Copy all the on-prem SQL Datbles at once into ADF 
+## Copy all the on-prem SQL Data tables at once into ADF 
 
 Created sql script as below to get schema > getschema.sql 
 
