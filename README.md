@@ -439,7 +439,7 @@ Azure Synapse Analytics is build top of ADF
 ![image](https://github.com/user-attachments/assets/bbf17ad8-5b6c-431c-8b12-78e9b888fe06)
 
 First we create databse in  Synapse Analytics (SA) via Data tab like below>
-## Note: TWo type data bses are there 
+## Note: TWo type databases are there 
 1: Serverles = good for small workload , not expensive
 2: dedicated = god for large workload , but this is expensive one 
 
