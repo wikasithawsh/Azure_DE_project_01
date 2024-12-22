@@ -434,14 +434,14 @@ Transformed data is saved as delta format in gold container from silver containe
 in created Resource Group > 
 ![image](https://github.com/user-attachments/assets/e6b286c0-2757-434d-8098-7a6b92a230cb)
 
-Azure Synapse Analytics is build top of ADF 
+Azure Synapse Analytics [SA] is built top of ADF 
 
 ![image](https://github.com/user-attachments/assets/bbf17ad8-5b6c-431c-8b12-78e9b888fe06)
 
-First we create databse in  Synapse Analytics (SA) via Data tab like below>
+First we create database in  Synapse Analytics (SA) via Data tab like below>
 ## Note: TWo type databases are there 
-1: Serverles = good for small workload , not expensive
-2: dedicated = god for large workload , but this is expensive one 
+1: Serverles = good for small workload, not expensive. here data does not reload into A SA
+2: dedicated = god for large workload, but this is an expensive one 
 
 ![image](https://github.com/user-attachments/assets/97aee9f7-9a5b-4ba0-834e-2736125a6e21)
 Furthermore, we can see SA sql tools , there is default serverless built in sql tool is there.
@@ -456,7 +456,7 @@ Here I used serverless SQL db for SA.
 ## Created SA serverless sql db naes as = gold_db
 ![image](https://github.com/user-attachments/assets/55ca00b4-74e2-4690-8bb4-a02351fc8a6e)
 
-## Note :Azure Sa is connected with Azure Data Lake
+## Note :Azure SA is connected with Azure Data Lake
 
 
 
