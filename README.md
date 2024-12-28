@@ -457,11 +457,67 @@ Here I used serverless SQL db for SA.
 ![image](https://github.com/user-attachments/assets/55ca00b4-74e2-4690-8bb4-a02351fc8a6e)
 
 ## Note :Azure SA is connected with Azure Data Lake
+![image](https://github.com/user-attachments/assets/5ec94171-4796-40e0-8993-d23867cba6fa)
+
+## We can directly do quey on DL tables from SA
+
+![image](https://github.com/user-attachments/assets/ac8fce62-6f9b-40ef-b386-b9f9a886d20e)
+
+
+we can select the gold container file type as delta as below 
+![image](https://github.com/user-attachments/assets/f0a05e04-0b4f-4265-a2c3-e267f9558272)
+
+![image](https://github.com/user-attachments/assets/2414d625-8a53-454a-9ddd-b3d4474a1cac)
+
+## Exercise 
+ ## Create a view in SA 
+ ![image](https://github.com/user-attachments/assets/e351df65-5035-46eb-8b50-43e22884434a)
+
+We can query from view now as below> 
+![image](https://github.com/user-attachments/assets/341b15cb-671d-451b-a777-c944f7dbf5cc)
+
+## Right now I have created one view for the gold container table manually, So the Next task is to create a pipeline to create views for all tables in the Gold  container  
+A stored procedure is created as below 
+![image](https://github.com/user-attachments/assets/64756a84-5321-4083-a26b-c5bef00b32bc)
+
+Once created stored procedure is, then run and verified, if it's working then we can publish it. 
+So next we have to create a link service connection to connect with SQl serverless database
+## Steps:
+SA > manage tab > linked services > new linked service connection > select Azure SQL database > then give a new name for the linked service like "serverlessSQLDb" >We can use AutoResolveRuntime here > For the Account selection method we can select "enter Manually one" > [ Go SA workspace > properties > under serverless SQL endpoint (find & copy that value we need it to add there) > paste it under fully qualified domain name  > for the database name we can give our "gold_db" > For the authentication type we can select as "System Assigned Managed Identity" > Check the test connection > create linked service  > publish the changes 
+
+## Hint: Check the below mentioned error first , then follow the below screenshots
+--------------------------------------------------------------------------------------------------------------------------------------------------
+![image](https://github.com/user-attachments/assets/6e87337a-5551-4887-9538-6c11e0af421d)
+
+![image](https://github.com/user-attachments/assets/0591fce2-68db-41f9-97ec-a214584de030)
+
+![image](https://github.com/user-attachments/assets/33b5745a-680d-42be-8a49-6dafb4aa3839)
+
+![image](https://github.com/user-attachments/assets/06458399-98ec-48a7-a35e-fc1a39ea3f7e)
+
+![image](https://github.com/user-attachments/assets/565e3efb-608b-42bd-94d7-4c7d8d8ccef7)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+## An error occurred  > Here I got Test connection is inactive , Connect via integration runtime wan disabled, so we have to enable it first 
+![image](https://github.com/user-attachments/assets/e8be8559-f1d0-4e2f-9acb-c29222e9f6e7)
+
+## Error is resolved now as below & test connection is successfull now & then save it 
+![image](https://github.com/user-attachments/assets/c0ae07a9-9f0f-48d3-99dc-f125bb8b01aa)
+
+Now we can publish all the changes. So, we have created a linked service to connect with the serverless database.
+Then we can use this linked service to access the stored procedure 
+
+## Now we can create the pipeline in SA 
+SA > integrate tab > pipeline > search & drag and drop "Get MetaData activity" ( this will get all the tables names from the data lake gold container) > click "get metadata activity" and  We have to give the name 
+like "gold_tables"  &  then go its the setting tab > We need to create a new data set for the data lake now > Since we want only table names here we can select Az gen 2 and file format as Binary >  Give name as like "gold tables" > select default synapse link from drop-down list > & select file path as gold container > SalesLt,(then we can see tables names now ) > important point (under get metadata settings we can see + new > " field list", select "child items" (So then it will get all the child files under the given file directory path )) > debug the pipeline and verify 
+
+![image](https://github.com/user-attachments/assets/64206847-9773-44dc-abdf-7d88d77c99f4)
+
+![image](https://github.com/user-attachments/assets/bca09453-5198-4661-a19d-678cb89a3b4e) 
 
 
 
 
-
+## After SA Get Metadata activity is done then we need to add ForEach Activity into pipeline , as beow 
 
 
 
