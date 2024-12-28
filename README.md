@@ -514,10 +514,53 @@ like "gold_tables"  &  then go its the setting tab > We need to create a new dat
 
 ![image](https://github.com/user-attachments/assets/bca09453-5198-4661-a19d-678cb89a3b4e) 
 
+![image](https://github.com/user-attachments/assets/b482049f-5e68-4f0f-bd0c-12d718eeb99c)
+
+![image](https://github.com/user-attachments/assets/d3a4647d-8a2d-444b-b48f-c0deadd2aa7a)
+
+After debuting > 
+![image](https://github.com/user-attachments/assets/c643813a-0a7f-4c8c-bcec-34a3ef03665b)
+
+![image](https://github.com/user-attachments/assets/5a205a6e-970c-4b41-8e0c-72b0384531d4)
 
 
+## After SA (Synapse Analytics)  Get Metadata activity is done then we need to add ForEach Activity into the pipeline, as below 
 
-## After SA Get Metadata activity is done then we need to add ForEach Activity into pipeline , as beow 
+![image](https://github.com/user-attachments/assets/930e5113-23e7-45e8-b008-4acd6fc8a3e8)
 
+## for Each Activity 
+
+Connect Get MetaData activity success link to ForEachActivity input > We can give a name for ForEach Activity as " for each table name" > in settings > add dynamic item (@activity('Get Tablenames').output.childitems) >>( so it can pass all details unter childitems in Get MetaData Activity to ForEach Table Activity) 
+
+![image](https://github.com/user-attachments/assets/6b180c92-17c1-4d75-bc6d-1af5c4e98b88)
+
+![image](https://github.com/user-attachments/assets/e5f799ff-8944-4dc3-a3b8-deecab2eb096)
+
+Click FOrEach activity and edit and add stored procedure
+![image](https://github.com/user-attachments/assets/0851e177-aa78-4b98-9906-2981e6da6101)
+
+![image](https://github.com/user-attachments/assets/a69c62e6-e12e-4b03-a538-a327cbe69464)
+
+![image](https://github.com/user-attachments/assets/ae739674-af3d-41a2-9f9e-33d673fc8129)  
+
+
+In Sa go >developer tab > stored proc > copy parameter 
+![image](https://github.com/user-attachments/assets/3d40705b-1be3-4658-b43f-21a5b3acf2d7)
+
+![image](https://github.com/user-attachments/assets/dde1532b-5bb7-4b5e-90a5-04eea22f1cd4)
+
+![image](https://github.com/user-attachments/assets/71d58c46-964e-4e3c-bc9d-7ddc1577eeb8)
+
+
+We can give a proper name for the SA pipeline and publish all to save 
+![image](https://github.com/user-attachments/assets/05afb147-f60f-40e5-afcb-dbb2d354d888)
+
+Now we can trigger the pipeline 
+![image](https://github.com/user-attachments/assets/69663555-2735-4685-8160-79d1d09794d3)
+
+## Error occurred for Synapse Analytics Pipeline as below, now we have to fix it first, it's in our stored procedure  
+![image](https://github.com/user-attachments/assets/0372bdb2-b6ab-45ad-b530-ab370f63cc1c)
+
+![image](https://github.com/user-attachments/assets/a1f4b3ef-ce78-4cfc-b00c-4f88a22c69cd) 
 
 
