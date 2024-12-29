@@ -558,9 +558,4 @@ We can give a proper name for the SA pipeline and publish all to save
 Now we can trigger the pipeline 
 ![image](https://github.com/user-attachments/assets/69663555-2735-4685-8160-79d1d09794d3)
 
-## Error occurred for Synapse Analytics Pipeline as below, now we have to fix it first, it's in our stored procedure  
-![image](https://github.com/user-attachments/assets/0372bdb2-b6ab-45ad-b530-ab370f63cc1c)
-
-![image](https://github.com/user-attachments/assets/a1f4b3ef-ce78-4cfc-b00c-4f88a22c69cd) 
-
 
